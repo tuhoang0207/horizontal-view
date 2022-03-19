@@ -1,17 +1,17 @@
 package com.example.food.models;
 
-public class MovieModel {
-//    private String title, genre, year, url;
-private String title, genre, year;
+public class Movie {
+    private String title, genre, year, url;
+    //private String title, genre, year;
 
-    public MovieModel() {
+    public Movie() {
     }
 
-    public MovieModel(String title, String genre, String year, String url) {
+    public Movie(String title, String genre, String year, String url) {
         this.title = title;
         this.genre = genre;
         this.year = year;
-//        this.url = url;
+        this.url = url;
     }
 
     public String getTitle() {
@@ -38,11 +38,11 @@ private String title, genre, year;
         this.genre = genre;
     }
 
-//    public String getUrl() {
-//        return url;
-//    }
-//
-//    public void setUrl(String url) {
-//        this.url = url;
-//    }
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
 }
