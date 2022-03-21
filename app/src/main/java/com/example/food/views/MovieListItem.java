@@ -1,5 +1,6 @@
 package com.example.food.views;
 
+import android.database.sqlite.SQLiteDatabase;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -15,6 +16,8 @@ public class MovieListItem extends RecyclerView.ViewHolder {
     private ImageView imageViewLogo;
     private Movie movie;
 
+    private SQLiteDatabase db;
+
     public MovieListItem(View view) {
         super(view);
         textViewTitle = view.findViewById(R.id.textViewTitle);
@@ -24,7 +27,9 @@ public class MovieListItem extends RecyclerView.ViewHolder {
     }
 
     public Movie getMovie() {
+
         return movie;
+
     }
 
     public void setMovie(Movie movie) {
